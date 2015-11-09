@@ -55,7 +55,7 @@ module JavaBuildpack
       private_constant :CONFIGURATION_PROPERTY, :ENVIRONMENT_PROPERTY, :ENVIRONMENT_VARIABLE
 
       def memory_option?(option)
-        option =~ /-Xms/ || option =~ /-Xmx/ || option =~ /-XX:MaxMetaspaceSize/ || option =~ /-XX:MaxPermSize/ ||
+        option =~ /-Xms/ || option =~ /-Xmx/ || option =~ /-XX:MaxPermSize/ ||
           option =~ /-Xss/ || option =~ /-XX:MetaspaceSize/ || option =~ /-XX:PermSize/
       end
 
