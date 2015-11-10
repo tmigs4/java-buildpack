@@ -56,7 +56,7 @@ module JavaBuildpack
 
       def memory_option?(option)
         option =~ /-Xms/ || option =~ /-Xmx/ || option =~ /-XX:MaxPermSize/ ||
-          option =~ /-Xss/ || option =~ /-XX:MetaspaceSize/ || option =~ /-XX:PermSize/
+          option =~ /-Xss/ || option =~ /-XX:PermSize/
       end
 
       def parsed_java_opts
